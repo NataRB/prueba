@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InmoExpert - Tu Socio Inmobiliario de Confianza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand text-primary fw-bold" href="#">InmoExpert</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#propiedades">Propiedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="video-background">
+                <video autoplay loop muted>
+                    <source src="./videos/istockphoto-1839934109-640_adpp_is.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            <div class="content">
+                <h1>Descubre tu hogar ideal</h1>
+                <p>InmoExpert te ofrece las mejores propiedades y un servicio personalizado para encontrar la casa de tus sueños.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Explorar propiedades</button>
+                    <button class="btn btn-secondary">Contactar un agente</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="stats">
+            <div class="container">
+                <div class="stat-card">
+                    <i data-lucide="home"></i>
+                    <h3>Propiedades vendidas</h3>
+                    <p>1,234+</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="users"></i>
+                    <h3>Clientes satisfechos</h3>
+                    <p>5,678+</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="building"></i>
+                    <h3>Propiedades disponibles</h3>
+                    <p>789+</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="briefcase"></i>
+                    <h3>Años de experiencia</h3>
+                    <p>25+</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="propiedades" class="properties">
+            <div class="container">
+                <h2>Propiedades Destacadas</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="venta">En Venta</button>
+                    <button class="tab-btn" data-tab="alquiler">En Alquiler</button>
+                </div>
+                <div class="tab-content active" id="venta">
+                    <div class="property-grid">
+                        <div class="property-card">
+                            <img src="/placeholder.svg?height=300&width=400&text=Propiedad+1" alt="Propiedad 1">
+                            <h3>Villa Moderna 1</h3>
+                            <img src="./img/r-architecture-rOk4VSMS3Ck-unsplash.jpg" alt="">
+                            <p><strong>Exclusiva propiedad con vistas panorámicas</strong></p>
+                            <div class="property-details">
+                                <span><i data-lucide="home"></i> 4 hab.</span>
+                                <span><i data-lucide="home"></i> 3 baños</span>
+                                <span><i data-lucide="home"></i> 250 m²</span>
+                            </div>
+                            <p>Lujosa villa con acabados de alta calidad, piscina privada y jardín paisajístico.</p>
+                            <div class="property-footer">
+                                <div class="price">
+                                    <i data-lucide="dollar-sign"></i>
+                                    <span>750,000</span>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- Repite para otras propiedades en venta -->
+                    </div>
+                </div>
+                <div class="tab-content" id="alquiler">
+                    <div class="property-grid">
+                        <div class="property-card">
+                            <img src="/placeholder.svg?height=300&width=400&text=Alquiler+1" alt="Alquiler 1">
+                            <h3>Apartamento Céntrico 1</h3>
+                            <img src="./img/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="">
+                            <p><strong>Moderno apartamento en el corazón de la ciudad</strong></p>
+                            <div class="property-details">
+                                <span><i data-lucide="home"></i> 2 hab.</span>
+                                <span><i data-lucide="home"></i> 1 baño</span>
+                                <span><i data-lucide="home"></i> 80 m²</span>
+                            </div>
+                            <p>Apartamento totalmente amueblado con excelentes vistas y ubicación privilegiada.</p>
+                            <div class="property-footer">
+                                <div class="price">
+                                    <i data-lucide="dollar-sign"></i>
+                                    <span>1,500/mes</span>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- Repite para otras propiedades en alquiler -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <i data-lucide="search"></i>
+                        <h3>Búsqueda personalizada</h3>
+                        <p>Encontramos la propiedad perfecta que se ajuste a tus necesidades y presupuesto.</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="briefcase"></i>
+                        <h3>Asesoría legal</h3>
+                        <p>Te guiamos en todos los aspectos legales de la compra, venta o alquiler de propiedades.</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="dollar-sign"></i>
+                        <h3>Valoración de propiedades</h3>
+                        <p>Realizamos tasaciones precisas para que conozcas el valor real de tu propiedad.</p>
+                    </div>
+                    <!-- Repite para otros servicios -->
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <h3>María García</h3>
+                        <p class="role">Compradora</p>
+                        <p>InmoExpert hizo que el proceso de compra de mi primera casa fuera increíblemente fácil. Su
+                            equipo fue profesional y atento en todo momento.</p>
+                        <div class="stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <!-- Repite para otros testimonios -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>Estamos aquí para ayudarle con todas sus necesidades inmobiliarias. No dude en ponerse en
+                            contacto con nosotros.</p>
+                        <div class="contact-details">
+                            <p><i data-lucide="phone"></i> +34 912 345 678</p>
+                            <p><i data-lucide="mail"></i> info@inmoexpert.com</p>
+                            <p><i data-lucide="home"></i> Calle Principal 123, 28001 Madrid, España</p>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>InmoExpert</h3>
+                    <p>Tu socio de confianza en el mundo inmobiliario.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#propiedades">Propiedades</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 InmoExpert. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal de éxito -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="successModalLabel">¡Mensaje Enviado!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
